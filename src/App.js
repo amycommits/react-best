@@ -1,9 +1,20 @@
-import SimpleInput from './components/SimpleInput'
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Home from './components/home'
+import Form from './components/form'
 function App() {
   return (
-    <div className="App">
-      <SimpleInput />
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/Form">
+            <Form />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

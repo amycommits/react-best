@@ -1,9 +1,10 @@
 import React from 'react'
-import SimpleInput from './SimpleInput'
+import { Link } from 'react-router-dom'
 export default function App() {
   return (
     <div className="App">
-      <SimpleInput />
+      HOME
+      <Link to="/form">Fill Out Form</Link>
     </div>
   );
 }
